@@ -273,16 +273,16 @@ redis数据迁移： redis数据迁移比较危险，因为项目中很多的唯
  dump.rdb是redis做永久化存储的文件，redis在启动的时候会读取配置文件中定义的rdb文件，并将其中的数据加载到内存中。
  使用dump.rdb做数据迁移可以参考如下流程：
 
- ![image](https://raw.githubusercontent.com/chenjie222/bilibili/master/Pic/run.png)
-
- 
+ ![image](https://raw.githubusercontent.com/chenjie222/fastfs_install/master/image/redis_slave.png)
 
  
 
  fastdfs是一个开源的轻量级分布式文件系统，主要用来做系统的文件管理，其中包含了客户上传/生成的相关文件，用于下载及预览，对于文件也需要迁移到新环境中去。
  fastdfs迁移主要是两个服务的迁移，tracker （跟踪器）服务和storage （存储节点）服务，体现在迁移工作上则是IP地址的变化。
 
- ![image](https://raw.githubusercontent.com/chenjie222/bilibili/master/Pic/run.png)
+![image](https://raw.githubusercontent.com/chenjie222/fastfs_install/master/image/fastdfs_slave.png)
+
+
 
  
 
