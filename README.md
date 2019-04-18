@@ -1,3 +1,27 @@
+# Fastdfs安装
+
+规划
+
+| 硬盘       | mount                  |
+| ---------- | ---------------------- |
+| /dev/sdd1/ | /fastdfs/tracker       |
+| /dev/sde1/ | /fastdfs/storage/data1 |
+| /dev/sdf1/ | /fastdfs/storage/data1 |
+| /dev/sdg1/ | /fastdfs/storage/data1 |
+
+创建分区
+
+```
+parted /dev/sdd
+mkpart 根据提示分区即可
+
+
+#修改分区文件系统
+mkfs.ext4 /dev/sdd2
+```
+
+
+
 ## 下载用到的包
 
 下载`libfastcommon`、`fastdfs`、`ngnix`、`fastdfs-nginx-module`： 
